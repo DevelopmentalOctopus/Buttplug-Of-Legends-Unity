@@ -46,7 +46,7 @@ public class ButtplugClient : MonoBehaviour
     {
         if(client.Connected == false)
         {
-            var connector = new ButtplugWebsocketConnectorOptions(new Uri("ws://localhost:12345/buttplug"));
+            var connector = new ButtplugWebsocketConnectorOptions(new Uri("ws://192.168.8.3:12345/buttplug"));
             await client.ConnectAsync(connector);
             if (client.Connected)
             {
